@@ -12,7 +12,9 @@ func main() {
 	// log.SetFlags(log.Ldate | log.Ltime)
 	log.SetFlags(0)
 
-	message, err := greetings.Hello("Jobe Camera")
+	names := []string{"Jobe", "Júlia", "Nicholas"}
+
+	message, err := greetings.Hellos(names)
 
 	if err != nil {
 		log.Fatal(err)
